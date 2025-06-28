@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+</head>
+<style>
+
+    /* In CSS Variable Are Made By :root */
+    /* Variables Are Used To Change Properties Using a variable */
+    /* root is used to make global variable */
+    :root{
+        --color:blue;
+        --seccolor:rgb(160, 160, 221);
+        --defpad: 43px;
+        --defop:0.5;
+
+        /* CSS Variable can also be used to padding,opacity or any type of value and name of variable does not show the property it just hold values to use in any property */
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .nav{
+        /* background-color: rgb(22,237,112); */
+        background-color: var(--color);
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        opacity: var(--defop);
+        list-style-type: none;
+        padding: var(--defpad);
+        border: 2px solid var(--seccolor);
+    }
+    ul li:first-child{
+        --color:rgb(243, 80, 7);
+        /* Here the color variable is used as a local variable so the ovewrited value of variable will be used  */
+        background-color: var(--color);
+    }
+    ul li:nth-child(2){
+        background-color: var(--color,green);
+        /* we can also set a value if the variable is not found ..if we remove the global variable from root then the background color will be set to given value */
+    }
+
+    .cont{
+        /* background-color: rgb(172,243,211); */
+        background-color: var(--seccolor);
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem magni unde atque consequuntur similique, quasi numquam in ea libero saepe praesentium facere, neque sint dignissimos nemo maiores sed voluptatem incidunt iure nisi illum! Nesciunt ex amet ipsa dolorem repudiandae non quis nulla tempora ipsam?</div>
+
+</body>
+</html>

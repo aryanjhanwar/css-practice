@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Margin, Padding Borders</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            background-color: yellow;
+        }
+        /* Here When Boxsizing:borderbox Is Not Used In box1Then The Height Is Element's Height */
+        .box1{
+            color: black;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid blue;
+            height: 200px;
+        /* Here When Boxsizing:borderbox I Used In box1Then The Height Is Total Height 
+        Including Padding and border but not margin*/
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        /* Margin Collapse Means The Greater Margin Is Implemented Between Two Boxs 
+        There Is No Different-Different Margin Its Just Union Of Them */
+        .box3{
+            color: grey;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I Am Box 1</div>
+    <div class="box box2">I Am Box 2</div>
+    <div class="box box3">I Am Box 3</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors MasterClass</title>
+</head>
+<style>
+    /* Element Selector */
+    main{
+        background-color: coral;
+    }
+    /* Class Selector */
+    .textisred{
+        background-color: red;
+    }
+    /* ID Selector */
+    #textisyellow{
+        background-color: yellow;
+    }
+    /* Universal Selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* Child Selector */
+    main > p{
+        color: white;
+        background-color: black;
+    }
+    div p:first-child{
+        background-color: cadetblue;
+        color: blueviolet;
+    }
+    div p:nth-child(2){
+        color: chocolate;
+        background-color: ghostwhite;
+    }
+    div p:nth-child(3){
+        color: black;
+        background-color: chartreuse;
+    }
+
+    /* Descendent Selector */
+    div p{
+        color: blue;
+        background-color: brown;
+    }
+    /* Pseudo Selector */
+    a:visited{
+        color: brown;
+    }
+    a:link{
+        color: green;
+    }
+    a:active{
+        background-color: purple;
+    }
+    a:hover{
+        background-color: fuchsia;
+    }
+    
+</style>
+<body>
+    <main>Here I am Using Element Selector</main>
+
+    <main class="textisred">Here I Used Class Selector</main>
+
+    <main id="textisyellow">Here I Used ID Selector</main>
+
+    <main>
+        <p>
+            This Is ParaGraph Inside Main..It is Direct Child
+        </p>
+    </main>
+    <main>
+        
+        <footer>
+            <p>This Is ParaGraph Inside Main..It is not Direct Child</p>
+        </footer>
+    </main>
+
+    <div>
+        <pre>
+            <p>This Is Descent Of Div but not Its Direct Child</p>
+        </pre>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/">Go To Facebook(visited)</a>
+        <a href="https://www.netflix.com/">Go To Netfix(visited,active)</a>
+        <a href="https://www.aryanjhanwar.com/">Go To Aryan(unvisited)</a>
+        <a href="https://www.instagram.com/">Go To Insta(unvisited,hover)</a>
+    </footer>
+
+    <div>
+        <p>
+            i am the first child paragraph inside div
+        </p>
+        <p>
+            i am the nth child(2) paragraph inside div
+        </p>
+        <p>
+            i am the nth child(3) paragraph inside div
+        </p>
+    </div>
+    
+
+</body>
+</html>

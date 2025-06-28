@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+</head>
+<style>
+    .box {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+
+
+        /* display: inline; */
+        /* When We Use Inline Then The Block Elemnets like div behave as inline elements 
+        and there margin and padding are not taken from top */
+
+        /* display: inline; does not operate on width and height of elements */
+
+
+        /* display: inline-block; */
+        /* When We Use Inline Block Then The Block Elemnets like div behave as inline elements 
+        and there margin and padding are taken from all sides including top */
+        /* display: inline-block; does operate on width and height of elements */
+
+
+        /* display: none; */
+        /* When We Use display: none; Then The element Block does not
+         display on screen and also doesn't leave space */
+
+    }
+    .box1{
+        visibility: hidden;
+        /* When We Use visibility: hidden; Then The element Block does not
+         display on screen and but leave space which it consumes */
+    }
+    .box2{
+        display: flex;
+        justify-content: center;
+        /* display: flex; is used to shifting position of elements inside the box */
+
+
+        /* display: inline-flex; */
+        /* display: inline-flex; is used to make block elements inline 
+        then shifting position of elements inside the box */
+
+    }
+</style>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">I am A Box</div>
+    <div class="box box2">I Am another box</div>
+    <div class="box box2">I Am another box2</div>
+
+    <span>I am A good</span>
+    <span>Boy</span>
+</body>
+
+</html>

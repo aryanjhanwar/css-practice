@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+</head>
+<style>
+    .container {
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid red;
+        display: flex;
+
+        /* flex-wrap: wrap; */
+        /* it helps to shift the items in next line if the items are overflowing in a container */
+
+        /* align-items: center; */
+        /* align items is used when there is only one line in flex box  */
+
+
+        align-content: center;
+        /* align content is used to align multiple lines of items in flex box */
+
+        /* NOTE------------ */
+        /* There is no justify-items in flex box it is a different property */
+
+
+        /* flex-flow: row-reverse wrap-reverse; */
+        /* flex flow is used to implement both flex direction and flex wrap property at once 1st we give flex direction then we
+        give flex wrap property */
+        flex-flow: row wrap;
+
+
+        /* gap: 30px; */
+        /* gap property is used to give gap between the items in flex box  */
+
+        /* we can also give row-gap and column-gap individually  */
+
+        /* row-gap: 10px; */
+        /* column-gap: 40px; */
+
+        /* 
+        gap: 10px 40px;   also works 
+        */
+
+        
+
+
+    }
+
+    .items {
+        color: white;
+        background-color: rgb(9, 58, 234);
+        height: 80px;
+        width: 80px;
+        border: 2px solid rgb(82, 167, 145);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+        <div class="items">13</div>
+       
+</body>
+</html>

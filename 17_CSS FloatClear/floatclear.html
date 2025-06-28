@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        /* float: left; */
+        float: right;
+        /* when we use float property the image/context allow the content to other side */
+    }
+    .card{
+        border: 2px solid red;
+    }
+    .cards{
+        border: 2px solid black;
+        display: flow-root;
+        /* display: flow-root; doesnt let the image/context overflow through the parent element */
+    }
+    div:nth-child(4){
+        background-color: cyan;
+        clear: right;
+        /* when we dont need any image/context to flow on either side of our element we use clear: ; property */
+    }
+</style>
+<body>
+    <div class="cards">
+        <img src="bird-8788491_640.webp" alt="" width="230">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium suscipit eius iure provident cupiditate aut ab, nam repellendus mollitia consequuntur, omnis ad.</div>
+        <div class="card">card2</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit perferendis, nostrum ea error alias eveniet aspernatur quasi hic, deleniti delectus inventore consequatur blanditiis doloremque quos minima iure repellat omnis. Repellat quae quidem dolores voluptate quo, incidunt unde odio tempora sit maiores provident ex delectus animi quaerat similique! Inventore, doloribus fugit. Officiis tempora possimus nihil, illo eaque voluptate laboriosam enim molestias soluta, amet deserunt aperiam beatae, itaque iusto recusandae quod sit ratione tempore velit quidem non voluptatibus. Tempore voluptatem cum quis possimus libero error sit natus sed doloremque, illo, exercitationem facilis tenetur, eius dolorum at dolores. Accusamus, nihil. Et perferendis sed sint placeat, unde nulla assumenda in officiis consequatur magnam ea deserunt rerum molestiae eius nihil velit labore soluta tempora. Impedit nesciunt doloribus inventore id porro, suscipit exercitationem numquam esse dolorum deleniti voluptate, eveniet neque quia odio dolor illum dicta, beatae tempora minus ex? Placeat libero nostrum, accusamus sequi amet eaque sunt asperiores iusto. Necessitatibus, dolorum inventore odio qui dolor laudantium totam voluptatem facere eaque labore iusto pariatur voluptatibus dolores, quae iste nam nostrum sequi molestiae! Molestias distinctio non odit nemo harum itaque reprehenderit! Fugiat sapiente non, debitis impedit modi ratione molestiae, accusantium alias eveniet enim eaque vitae minus sunt ipsam dolor numquam laudantium ea magnam dolorum distinctio aspernatur! Nam eligendi voluptate id possimus maxime ad sit laborum excepturi laboriosam cumque, aspernatur, quos a unde natus odit, amet maiores vel asperiores. Facilis commodi magnam possimus animi enim est et doloribus, beatae dolorem reiciendis, nulla dicta nam alias ipsum eius ducimus sapiente voluptas consequatur fugit provident minus saepe! Dolorum et, ipsam nihil itaque nulla eaque distinctio ut fuga ullam blanditiis voluptas eius unde repellat quaerat quos placeat aut error qui enim tempora sequi officiis similique doloribus quo. Eum consectetur hic deleniti dolorem optio similique quisquam neque nulla, vitae saepe officia labore pariatur reiciendis harum earum aliquid eius nostrum voluptates! Id totam quaerat praesentium natus ex dicta nesciunt aspernatur distinctio tempore vitae, obcaecati esse sunt quae incidunt aperiam, nam mollitia ea placeat. Sunt blanditiis corporis dolore?</div>
+    </div>
+</body>
+</html>

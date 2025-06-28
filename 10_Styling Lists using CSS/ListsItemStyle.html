@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS</title>
+</head>
+<style>
+    nav ul li{
+        /* list-style: none;  Removes The Disc Or Any Other Sytle In Lists */ 
+
+        /* list-style:; is used to add any type of style in lists */
+
+        background-color: yellow; 
+        /* here the marker will not be included so to include the marker with the lists elements 
+        we use list-style-position:inside; */
+        list-style-position: inside;
+        border: 2px solid black;
+
+        /* To include image as a lists we use list-style-image */
+        list-style-image: url(https://cdn4.iconfinder.com/data/icons/basic-business-1/36/Checkmark_right_icon-512.png);
+        height: 512px;
+        width: 512px;
+        display: inline-flexbox;
+    }
+    /* To Access Individual li inside un/orderlists we can use class or first/nth child */
+    nav li:first-child{
+        background-color: red;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+.main{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    height: 96vh;
+    width: 70vh;
+    position: absolute;
+    left: 750px;
+}
+.box{
+    background-color: orange;
+    border: 5px solid white;
+    height: 86vh;
+    width: 51vh;
+    position: absolute;
+    left: 95px;
+    top: 50px;
+    border-radius: 35px;
+}
+img{
+    height: 420px;
+    width: 500px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    border-radius: 30px;
+}
+.Nature{
+    background-color: white;
+    color: black;
+    height: 33px;
+    width: 97px;
+    border: 3px groove black;
+    font-size: 27px;
+    position: absolute;
+    top: 452px;
+    left: 26px;
+    padding: 7px;
+    border-radius: 50px;
+    text-align: center;
+}
+.Lake{
+    background-color: white;
+    color: black;
+    height: 33px;
+    width: 97px;
+    border: 3px groove black;
+    font-size: 27px;
+    position: absolute;
+    top: 453px;
+    left: 156px;
+    padding: 7px;
+    border-radius: 50px;
+    text-align: center;
+}
+h1{
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    font-size: 55px;
+}
+.lorem{
+    position: absolute;
+    top: 606px;
+    left: 10px;
+    font-size: 33px;
+}
+.readmore{
+    position: absolute;
+    top: 778px;
+    left: 135px;
+    font-size: 40px;
+    background-color: rgba(180, 168, 222, 0.948);
+    color: rgb(5, 5, 232);
+    border: rgba(160, 225, 233, 0.778);
+    padding: 30px;
+    border-radius: 55px;
+}

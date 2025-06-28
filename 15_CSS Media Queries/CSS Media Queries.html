@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+</head>
+<style>
+    body {
+        background-color: red;
+
+        /* syntx of media query: 
+        @media not|only mediatype and (expressions){
+            code;
+        }  */
+    }
+
+
+
+    @media screen and (orientation: landscape) {
+        body {
+            border: 2px solid purple;
+        }
+    }
+    /* Here When The Orientation Is Landscape then the border will appear but when it is portrait the border will not appear 
+
+    In,landscape width is greater than height
+    In,Portrait height is greater than width */
+
+
+
+
+    @media only screen and (max-width:455px)
+    {
+        body {
+
+            background-color: blue;
+        }
+        .boxes {
+            flex-direction: column;
+        }
+
+    }
+
+
+
+    .boxes {
+        display: flex;
+    }
+
+    .box {
+        height: 344px;
+        width: 344px;
+        background-color: steelblue;
+        padding: 3px;
+        margin: 3px;
+    }
+</style>
+
+<body>
+    <div>Hey I am a Red Body Guy!!!</div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

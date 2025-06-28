@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+</head>
+<style>
+    .box{
+        width: 30vw;
+        height: 10vh;
+        border: 2px solid black;
+        /* Overflow scroll add scroller to the box when text is overflowing
+        through it  */
+        /* overflow: scroll; */
+
+        /* Overflow scroll can be used in X AND Y both axis */
+        /* overflow: hidden scroll; This In only In Y direction Similarly For X we
+         will put overflow: scroll hidden; */
+
+
+         /* overflow: auto; */
+         /* If the text is not overflowing then scroll bar will not be present and
+         if text is overflowing then it will be present */
+
+
+         /* white-space: nowrap; */
+         /* if is used to not let text move in lower line even if text is overflowing */
+
+
+        /* text-overflow: ellipsis; */
+          /* Dots Will Come If text Is Overflowing  */
+
+          /* overflow: clip;  */
+          /* is used to remove overflowing text as well as scroller */
+        }
+</style>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod modi itaque dignissimos. Placeat, voluptate assumenda. Odit laborum ullam et, alias vitae eveniet possimus laboriosam est beatae, facere autem reiciendis dolor. Est, distinctio! Quos illo, voluptates ad nobis corporis tempora veniam. Harum aliquid mollitia quisquam veniam eveniet exercitationem nostrum. Temporibus, molestiae mollitia! Repellat tempora repudiandae magnam.
+    </div>
+</body>
+</html>

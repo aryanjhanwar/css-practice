@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+</head>
+<style>
+    p{
+        color: white;
+        background-color: aqua;
+    }
+    /* !important selector */
+    h2{
+        color: maroon !important; 
+        background-color:navajowhite !important;
+    }
+    /* class selector */
+    .cyellow{
+        background-color: yellow;
+    }
+    .cred{
+        background-color: red;
+    }
+    .cblack{
+        background-color: black;
+    }
+    /* ID Selector */
+    #green{
+        background-color: green;
+    }
+    /* Attribute Selector */
+    [data-x=a]{
+        background-color: brown;
+    }
+    /* There Specificity Will add Upto 1 + 10 = 11 and yellow color will display */
+    h1.cyellow{
+        background-color: yellow;
+    }
+    
+</style>
+<body>
+    <p class="cyellow cred cblack">When Mutiple Classes Are Presnent Then Then The Speificity
+    will be of the last class present in style sheet or code </p>
+    <main class="cblack" id="green">If ID,Class,Element and attributes Are Given Different-Different properties
+        Then priority Will be !important> Inline Sytle>ID>Class or Attribute>Element>Unviersal Selector
+    </main>
+    <h2 style="color: navy; background-color:hotpink;">
+        !important priority will be highest even if sytle attributes is used .. !important 
+        can be used in anything class id etc
+    </h2>
+    <!-- Inline Style -->
+    <h5 style="color: orange;" class="cblack" id="green">Here Inline Style Is Present Do it will Have Highest priority</h5>
+
+    <!-- Attribute Selector -->
+     <h6 data-x="a" class="cblack">
+        Attribute Selector's priority Is less then id but equal to class and greater 
+        than element and universal selector
+        and class and atrribute selector prieority depends on which is lower in style element
+        or css sheet
+     </h6>
+     <h1 class="cblack cyellow">
+        When two selector are shown in css then there Specificity adds up and determine which properties to use..
+        There Specificity Will add Upto 1 + 10 = 11 and yellow color will display..
+        Cblack clss have specificity of 10 so it wont be displayed
+     </h1>
+</body>
+</html>

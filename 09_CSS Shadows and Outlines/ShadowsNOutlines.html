@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+</head>
+<style>
+    .box{
+        border: 5px solid red;
+        padding: 34px;
+
+        /* Box Shadow */
+        /* box-shadow: h-offset v-offset blur spread color inset; */
+        box-shadow: 5px 5px 15px 5px #888888;
+    }
+    .text-element { text-shadow: 3px -1px 4px #0941ed; }
+    .outline{
+        border: 2px solid green;
+        outline: 2px solid black;
+
+        /* Border is inside the element and Outline is outside the element */
+
+        outline-offset: 2px;
+        border-radius: 32px;
+
+        /* outline is set according to the border applied outside the border */
+    }
+</style>
+
+<body>
+    <div class="box">
+        I am box
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-element">I am Lorem Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, omnis? Magnam ea sapiente vel ipsa nostrum, beatae debitis amet? Praesentium quidem veritatis eos recusandae sunt quisquam quibusdam, cum accusantium fuga.</div>
+
+    <div class="outline">Example Box For Outline</div>
+
+</body>
+
+</html>

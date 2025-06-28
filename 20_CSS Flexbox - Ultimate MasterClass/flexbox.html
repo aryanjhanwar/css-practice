@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+</head>
+<style>
+    .container{
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid red;
+        display: flex;
+
+
+        /* justify-content: center; */
+        /* justify-content: center help in moving the items in the center but 
+        it only center it horizontally */
+
+        /* align-items: center; */
+        /* align-items: center help in moving the items in the center 
+        it align items to the center horizontally as well as vertically */
+
+        /* see properties of align-items by using inspect */
+
+
+        /* justify-content: space-; */
+        /* 
+        in spacing the content 
+        1) space-between is used to give space only btw the items not btw box 
+        2) space-evenly is used to give equal space btw item as well as the box
+        3) space-around is used to give less space btw box and items but equal
+        space btw items
+        */
+    }
+    .items{
+        color: purple;
+        background-color: rgb(9, 58, 234);
+        height: 80px;
+        width: 80px;
+        border: 2px solid rgb(82, 167, 145);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+</html>
